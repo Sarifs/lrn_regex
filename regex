@@ -1,0 +1,23 @@
+learn regex
+
+.  : any charactere even special charactere
+[] : any charactere inside the square bracket
+    ex : b[aeiou]r = match any word begening by b, folowed by a,e,i,o or u and finished by r
+^  : exclude characteres.
+    ex : b[^ei]r , include all word above but all word begining by b followed by e or i and finishing r
+[a-e] : all charactere between a and e
+* : the characte may be there and repeted many times or not be there
+    ex : e* the letter may appart in a world many time or not at all
++ : same as * but the charactere appare at least one time 
+? : u? le caracter u is optional
+{n} : specifile the number of time that a character can appear 
+   ex {3}e, match any word with exactly three e
+{n,} : charactere can appear at least n time
+{n,m} : to specifi a range
+() : to creat a groupe
+()\n : creat reference to groupe 
+  ex: (ha)-\1,(haa)-\2 gr1 = ha and gr2 = haa
+(?: ) : do not capture the groupe 
+  ex (?:ha)-ha,(haa)-\1 the first groupe is not ha but haa
+| : or  
+  ex (c|r)at|dog c or r followed by at or dog
