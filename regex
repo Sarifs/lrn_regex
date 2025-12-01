@@ -21,3 +21,23 @@ learn regex
   ex (?:ha)-ha,(haa)-\1 the first groupe is not ha but haa
 | : or  
   ex (c|r)at|dog c or r followed by at or dog
+\ : to escapte special characteres
+
+^[0-9] : to prefix , find any number at the begening of the line \
+$ : to find anyfing only at the end of the line
+    ex html$ https://domain.com/what-is-html.html find only html at the end of html
+\w : find only letters, numbers et underscore
+html
+\W : everything but letters, numbers et underscore
+\d : find only numbers
+\D : evething but numbers
+\s : all space
+\S : everything but space
+
+### lookaround
+
+(?=) : to find something befor a specifique word
+    ex : Date: 4 Aug 3PM
+        \d+(?=PM) find a digital numbers befor PM
+(?!) : eveything but expression befor a specifique word
+    ex : \d+(?!PM) find any unique digit but the one befor PN
