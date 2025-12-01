@@ -41,3 +41,11 @@ html
         \d+(?=PM) find a digital numbers befor PM
 (?!) : eveything but expression befor a specifique word
     ex : \d+(?!PM) find any unique digit but the one befor PN
+(?<=) : to find a specifique value after a word
+    ex : (?<=\$)\d+ find an unique digit after the $
+(?<!) : everything but the specifique value after a word
+    (?<!\$)\d+
+g : all find matched word
+m : multi line 
+i : case sensitive
+.*? : find only the first matched expression 
